@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libera - Pulsa Elektrik & Dompet Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Libera</div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</header>
+
+<section class="hero">
+    <h1>Solusi Praktis Kebutuhan Digitalmu</h1>
+    <p>Isi pulsa & dompet digital dengan cepat dan mudah hanya di Libera!</p>
+    <a href="#order" class="cta-btn">Pesan Sekarang</a>
+</section>
+
+<section class="services">
+    <h2>Layanan Kami</h2>
+    <div class="service-list">
+        <div class="service-item">📱 Pulsa Elektrik</div>
+        <div class="service-item">💡 Token Listrik</div>
+        <div class="service-item">💰 Saldo e-Wallet</div>
+        <div class="service-item">🎮 Voucher Game</div>
+    </div>
+</section>
+
+<section class="order" id="order">
+    <h2>Form Pemesanan</h2>
+    <form onsubmit="sendWhatsApp(event)">
+        <input type="text" id="name" placeholder="Nama kamu" required>
+        <select id="product" required>
+            <option value="">Pilih Layanan</option>
+            <option>Pulsa Elektrik</option>
+            <option>Token Listrik</option>
+            <option>Saldo e-Wallet</option>
+            <option>Voucher Game</option>
+        </select>
+        <input type="text" id="target" placeholder="Nomor HP/ID Tujuan" required>
+        <input type="number" id="amount" placeholder="Nominal" required>
+        <button type="submit" class="cta-btn">Pesan via WhatsApp</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 Libera - Semua Hak Dilindungi
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
